@@ -8,19 +8,28 @@
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Playfair+Display">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
     <script src="https://kit.fontawesome.com/772048cd80.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <ul>
+        <ul >
             <li><a href="/"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#details">Event Details</a></li>
-            <li><a href="#guests">Guests</a></li>
-            <li><a href="#signup">Sign up</a></li>
+            <li><a href="#details" class="hidden">Event Details</a></li>
+            <li><a href="#guests" class="hidden">Guests</a></li>
+            <li><a href="#signup" class="hidden">Sign up</a></li>
           </ul>
           <ul>
-            <li><a href="">About</a></li>
+            <li><a href="" class="hidden">About</a></li>
+            <li class="ham-icon mobile"><i class="fa-solid fa-bars "></i></li>
           </ul>
+          
+            <ul class="ham-menu">
+                <li><a href="#details">Event Details</a></li>
+                <li><a href="#guests">Guests</a></li>
+                <li><a href="#signup">Sign up</a></li>
+            </ul>
+          
     </nav>
     <section id="details" class="container">
             <div class="content">
@@ -105,7 +114,7 @@
                 <li><a href="">Linkedin</a></li>
             </ul>
         </div>
-        <div><h2>Social Links 2</h2>
+        <div class="hidden"><h2>Social Links 2</h2>
             <ul>
             <li><a href="">Youtube</a></li>
             <li><a href="">Twitch</a></li>

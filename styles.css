@@ -5,6 +5,9 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: "Playfair Display";
@@ -42,7 +45,7 @@ body {
       }
       
       
-     nav li a {
+     nav li a , .ham-icon {
         display: block;
         color: var(--brown);
         text-align: center;
@@ -237,6 +240,10 @@ padding-bottom: 3rem;}
 
 }
 
+
+
+
+
 .sform button:hover {
     background-color: var(--white-bright);
     border: 2px solid var(--white-bright);
@@ -298,4 +305,99 @@ footer {
     margin: 0px;
     border-bottom: #723e31 2px solid;
     padding-bottom: 0.5rem;
+  }
+
+.mobile {
+    display: none;
+}
+
+.ham-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    transform: translateY(34%);
+    border-bottom: #723e31 2px solid;
+
+}
+
+.open {
+    display: flex;
+}
+
+
+.ham-icon{
+
+}
+
+
+
+  @media only screen and (max-width: 600px) {
+    .content {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    .content h1 {
+        font-size: 3rem;
+    }
+    .sform {
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        padding-bottom: 3.3rem;
+    }
+    .sform input {
+        width: 15rem;
+    }
+    .sform button {
+        margin: 0px;
+        margin-top: 0.65rem;
+        width: 7rem;
+    }
+    .sform div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .desc {
+        gap : 19px;
+    }
+    .hidden {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .parent div{
+        padding-left: 0px;
+        
+    }
+    .parent {
+        gap: 30px;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
   }
